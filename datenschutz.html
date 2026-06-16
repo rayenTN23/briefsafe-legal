@@ -6,231 +6,60 @@
 <title>Datenschutzerklärung – BriefSafe</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap');
-
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   :root {
-    --blue: #1a56db;
-    --bg: #f8f9fc;
-    --card: #ffffff;
-    --text: #1a1d2e;
-    --muted: #6b7280;
-    --border: #e5e7eb;
-    --accent: #eff6ff;
+    --blue: #1a56db; --bg: #f8f9fc; --card: #ffffff; --text: #1a1d2e;
+    --muted: #6b7280; --border: #e5e7eb; --accent: #eff6ff;
   }
-
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.7;
-    font-size: 16px;
-  }
-
-  header {
-    background: var(--card);
-    border-bottom: 1px solid var(--border);
-    padding: 20px 24px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
-
-  .logo {
-    width: 36px;
-    height: 36px;
-    background: var(--blue);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 18px;
-  }
-
-  header h1 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 20px;
-    font-weight: 400;
-  }
-
-  header span {
-    color: var(--muted);
-    font-size: 14px;
-    margin-left: auto;
-  }
-
-  .container {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 48px 24px 80px;
-  }
-
-  .hero {
-    background: var(--accent);
-    border: 1px solid #bfdbfe;
-    border-radius: 16px;
-    padding: 32px;
-    margin-bottom: 40px;
-  }
-
-  .hero h2 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 28px;
-    font-weight: 400;
-    margin-bottom: 8px;
-    color: var(--blue);
-  }
-
-  .hero p {
-    color: var(--muted);
-    font-size: 15px;
-  }
-
-  .updated {
-    display: inline-block;
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 4px 12px;
-    font-size: 13px;
-    color: var(--muted);
-    margin-top: 12px;
-  }
-
-  .highlight-box {
-    background: #f0fdf4;
-    border: 1px solid #bbf7d0;
-    border-radius: 12px;
-    padding: 20px 24px;
-    margin-bottom: 32px;
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-  }
-
+  body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; font-size: 16px; }
+  header { background: var(--card); border-bottom: 1px solid var(--border); padding: 20px 24px; display: flex; align-items: center; gap: 12px; position: sticky; top: 0; z-index: 10; }
+  .logo { width: 36px; height: 36px; background: var(--blue); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px; }
+  header h1 { font-family: 'DM Serif Display', serif; font-size: 20px; font-weight: 400; }
+  header span { color: var(--muted); font-size: 14px; margin-left: auto; }
+  .container { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+  .hero { background: var(--accent); border: 1px solid #bfdbfe; border-radius: 16px; padding: 32px; margin-bottom: 40px; }
+  .hero h2 { font-family: 'DM Serif Display', serif; font-size: 28px; font-weight: 400; margin-bottom: 8px; color: var(--blue); }
+  .hero p { color: var(--muted); font-size: 15px; }
+  .updated { display: inline-block; background: white; border: 1px solid var(--border); border-radius: 20px; padding: 4px 12px; font-size: 13px; color: var(--muted); margin-top: 12px; }
+  .highlight-box { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 20px 24px; margin-bottom: 32px; display: flex; gap: 12px; align-items: flex-start; }
   .highlight-box .icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
-
   .highlight-box p { font-size: 15px; color: #166534; font-weight: 500; }
-
-  section {
-    margin-bottom: 36px;
-  }
-
-  h3 {
-    font-size: 17px;
-    font-weight: 600;
-    margin-bottom: 12px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--border);
-    color: var(--text);
-  }
-
+  section { margin-bottom: 36px; }
+  h3 { font-size: 17px; font-weight: 600; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); color: var(--text); }
   p { color: #374151; font-size: 15px; margin-bottom: 10px; }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 8px 0 12px;
-  }
-
-  ul li {
-    display: flex;
-    gap: 10px;
-    align-items: flex-start;
-    font-size: 15px;
-    color: #374151;
-    margin-bottom: 8px;
-  }
-
-  ul li::before {
-    content: '·';
-    color: var(--blue);
-    font-weight: 700;
-    flex-shrink: 0;
-    margin-top: 1px;
-  }
-
-  .service-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 16px 20px;
-    margin-bottom: 10px;
-  }
-
-  .service-card strong {
-    display: block;
-    font-size: 15px;
-    margin-bottom: 4px;
-  }
-
-  .service-card p {
-    font-size: 14px;
-    color: var(--muted);
-    margin: 0;
-  }
-
-  .service-card a {
-    color: var(--blue);
-    text-decoration: none;
-    font-size: 13px;
-  }
-
-  .contact-box {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 24px;
-    text-align: center;
-  }
-
+  ul { list-style: none; padding: 0; margin: 8px 0 12px; }
+  ul li { display: flex; gap: 10px; align-items: flex-start; font-size: 15px; color: #374151; margin-bottom: 8px; }
+  ul li::before { content: '·'; color: var(--blue); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+  .service-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; margin-bottom: 10px; }
+  .service-card strong { display: block; font-size: 15px; margin-bottom: 4px; }
+  .service-card p { font-size: 14px; color: var(--muted); margin: 0; }
+  .service-card a { color: var(--blue); text-decoration: none; font-size: 13px; }
+  .contact-box { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; text-align: center; }
   .contact-box p { margin-bottom: 4px; }
-
-  .contact-box a {
-    color: var(--blue);
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  footer {
-    text-align: center;
-    padding: 32px 24px;
-    color: var(--muted);
-    font-size: 13px;
-    border-top: 1px solid var(--border);
-  }
+  .contact-box a { color: var(--blue); text-decoration: none; font-weight: 500; }
+  footer { text-align: center; padding: 32px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
 </style>
 </head>
 <body>
-
 <header>
   <div class="logo">✉</div>
   <h1>BriefSafe</h1>
   <span>Datenschutzerklärung</span>
 </header>
-
 <div class="container">
-
   <div class="hero">
     <h2>Datenschutzerklärung</h2>
     <p>Wir nehmen den Schutz deiner persönlichen Daten sehr ernst.</p>
-    <div class="updated">Zuletzt aktualisiert: Mai 2026</div>
+    <div class="updated">Zuletzt aktualisiert: Juni 2026</div>
   </div>
-
   <div class="highlight-box">
     <div class="icon">🔒</div>
     <p>BriefSafe speichert deine Dokumente ausschließlich lokal auf deinem Gerät. Wir verkaufen keine Daten und geben nichts an Werbetreibende weiter.</p>
   </div>
-
   <section>
     <h3>1. Verantwortlicher</h3>
     <p>Diese App wird von Rayen Abdessalem betrieben. Bei Fragen zum Datenschutz erreichst du uns unter der unten angegebenen E-Mail-Adresse.</p>
   </section>
-
   <section>
     <h3>2. Welche Daten wir verarbeiten</h3>
     <ul>
@@ -238,45 +67,45 @@
       <li>Einen optionalen Namen, den du beim Onboarding eingibst — nur lokal</li>
       <li>Eine anonyme Firebase-ID zur Nutzung der KI-Analyse — ohne Personenbezug</li>
       <li>Den Textinhalt gescannter Dokumente — wird zur KI-Analyse an unsere Server gesendet und danach nicht gespeichert</li>
+      <li>Anonyme Kaufinformationen zur Verwaltung deines Premium-Abonnements — über RevenueCat</li>
     </ul>
   </section>
-
   <section>
     <h3>3. Zweck der Datenverarbeitung</h3>
     <ul>
       <li>Bereitstellung der KI-Analyse deiner Dokumente</li>
       <li>Übersetzung von Dokumenteninhalten</li>
       <li>Lokale Speicherung deiner Dokumente für späteren Zugriff</li>
+      <li>Verwaltung von Premium-Abonnements</li>
     </ul>
   </section>
-
   <section>
     <h3>4. Drittanbieter</h3>
-
     <div class="service-card">
       <strong>🔥 Firebase (Google LLC)</strong>
       <p>Anonyme Authentifizierung und serverlose Funktionen für die KI-Analyse. Standort: EU (europe-west1).</p>
       <a href="https://firebase.google.com/support/privacy" target="_blank">Datenschutzrichtlinie →</a>
     </div>
-
     <div class="service-card">
       <strong>🤖 Anthropic (Claude API)</strong>
       <p>Verarbeitung des erkannten Textes zur Erstellung der Dokumentanalyse. Texte werden nicht dauerhaft gespeichert.</p>
       <a href="https://www.anthropic.com/privacy" target="_blank">Datenschutzrichtlinie →</a>
     </div>
-
+    <div class="service-card">
+      <strong>💳 RevenueCat</strong>
+      <p>Verwaltung von In-App-Käufen und Premium-Abonnements. RevenueCat verarbeitet anonyme Kaufdaten zur Überprüfung des Abonnementstatus. Keine Zahlungsdaten werden von RevenueCat gespeichert — die Zahlung erfolgt ausschließlich über Apple.</p>
+      <a href="https://www.revenuecat.com/privacy" target="_blank">Datenschutzrichtlinie →</a>
+    </div>
     <div class="service-card">
       <strong>📱 Apple (iOS)</strong>
-      <p>OCR-Texterkennung erfolgt lokal auf deinem Gerät über das Apple Vision Framework. Keine Daten verlassen dein Gerät.</p>
+      <p>OCR-Texterkennung erfolgt lokal auf deinem Gerät über das Apple Vision Framework. Zahlungsabwicklung für Abonnements über den App Store. Keine Zahlungsdaten werden an uns weitergegeben.</p>
       <a href="https://www.apple.com/de/privacy/" target="_blank">Datenschutzrichtlinie →</a>
     </div>
   </section>
-
   <section>
     <h3>5. Datenspeicherung</h3>
     <p>Alle deine Dokumente, Analysen und Einstellungen werden ausschließlich lokal auf deinem iPhone gespeichert. Wir haben keinen Zugriff darauf. Wenn du die App löschst, werden alle Daten entfernt.</p>
   </section>
-
   <section>
     <h3>6. Deine Rechte</h3>
     <ul>
@@ -286,17 +115,14 @@
       <li>Beschwerde bei der zuständigen Datenschutzbehörde</li>
     </ul>
   </section>
-
   <section>
     <h3>7. Kinder</h3>
     <p>BriefSafe richtet sich nicht an Kinder unter 13 Jahren. Wir erfassen wissentlich keine Daten von Kindern.</p>
   </section>
-
   <section>
     <h3>8. Änderungen</h3>
     <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen. Die aktuelle Version ist stets auf dieser Seite abrufbar.</p>
   </section>
-
   <section>
     <h3>9. Kontakt</h3>
     <div class="contact-box">
@@ -304,12 +130,9 @@
       <a href="mailto:rayen.abdessalem@icloud.com">rayen.abdessalem@icloud.com</a>
     </div>
   </section>
-
 </div>
-
 <footer>
   © 2026 BriefSafe · Alle Rechte vorbehalten
 </footer>
-
 </body>
 </html>
